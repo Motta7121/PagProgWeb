@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: rgb(0, 0, 0);
+            
+        }
+        form{
+            align-items: center;
+            position: relative;
+            margin: auto;
+            align-content: center;
+        }
+        input{
+            width: 330px;
+            height: 50px;
+            align-content: center;
+            align-items: center;
+            border: solid 3px black;
+        }
+div{
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+    <form>
+        <input type="text" placeholder="login" id="login"> 
+        <br>
+        <br>
+        <br>
+        <input type="password" placeholder="senha" id="senha">
+        <br>
+        <br>
+        <br>
+        <input type="submit" onclick="logar(); return false">
+    </form>
+</div>
+    <script>
+        function logar(){
+            let login = document.getElementById("login").value;
+            let senha = document.getElementById("senha").value;
+
+            if (login == "Luiz" && senha == "Luiz"){
+            alert('Sucesso');
+            location.href="luizfelipe.html";
+            }
+            else if (login == "Daniel" && senha == "Daniel"){
+             alert('Sucesso');
+             location.href="danielFilipe.html";
+            }
+            else if (login == "PedroEsq" && senha == "PedroEsq"){
+            alert('Sucesso');
+            location.href="pedroEsq.html";
+            }
+           else if (login == "Vitor" && senha == "Vitor"){
+             alert('Sucesso');
+             location.href="vitorG.html";
+            }
+            else{
+           alert('Senha ou Login incorretos.');
+            }
+        }
+    </script>
+</body>
